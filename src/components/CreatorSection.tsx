@@ -92,9 +92,11 @@ export function CreatorSection() {
                     </div>
                   </div>
                 </div>
-                <Button variant="outline" size="sm">
-                  <ExternalLink className="h-4 w-4" />
-                  View
+                <Button variant="outline" size="sm" asChild>
+                  <a href="https://www.instagram.com/orathai_265/" target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="h-4 w-4" />
+                    View
+                  </a>
                 </Button>
               </div>
 
