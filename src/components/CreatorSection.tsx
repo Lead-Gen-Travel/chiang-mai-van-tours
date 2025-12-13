@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Instagram, ExternalLink, Play, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import ownerPortrait from "@/assets/owner-portrait.jpg";
+import ownerPortrait from "@/assets/orathai-portrait.jpg";
 const instagramReels = [{
   title: "Feeding elephants at sunrise",
   views: "2.1M views"
