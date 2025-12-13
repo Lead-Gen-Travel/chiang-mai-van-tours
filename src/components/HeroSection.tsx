@@ -43,9 +43,11 @@ export function HeroSection() {
             </ul>
 
             {/* CTA Button */}
-            <Button variant="whatsapp" size="xl">
-              <MessageCircle className="h-5 w-5" />
-              WhatsApp us to plan your trip
+            <Button variant="whatsapp" size="xl" asChild>
+              <a href="https://wa.me/66817645420" target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="h-5 w-5" />
+                WhatsApp us to plan your trip
+              </a>
             </Button>
           </motion.div>
 
