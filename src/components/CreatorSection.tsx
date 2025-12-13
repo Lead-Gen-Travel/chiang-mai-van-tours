@@ -47,13 +47,13 @@ export function CreatorSection() {
             <div className="relative">
               <img src={ownerPortrait} alt="Ying, tour guide at Doi Suthep temple viewpoint with happy travelers" className="w-full max-w-md rounded-2xl shadow-hover mx-auto lg:mx-0" />
               <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground px-4 py-2 rounded-xl shadow-warm">
-                <span className="font-semibold">5+ years guiding</span>
+                <span className="font-semibold">15+ years guiding</span>
               </div>
             </div>
 
             <div className="bg-card rounded-2xl p-8 shadow-card">
               <p className="text-lg text-foreground mb-6 leading-relaxed">
-                <span className="text-2xl">🙏</span> Sawadee ka! I'm Orethai. I started this van service to show travelers
+                <span className="text-2xl">🙏</span> Sawadee ka! I'm Orethai, 42 years old, born and raised in Thailand. I started this van service to show travelers
                 the Chiang Mai I love. When I'm not driving guests around the mountains, I'm making travel videos on
                 Instagram and TikTok for my community of more than
                 <span className="font-semibold text-primary"> 220K followers</span>.
