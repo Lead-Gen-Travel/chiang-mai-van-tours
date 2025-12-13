@@ -18,7 +18,7 @@ export function Footer() {
               Experience the best of Northern Thailand with a local guide who speaks your language.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="h-10 w-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors">
+              <a href="https://www.instagram.com/orathai_265/" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
               <a href="https://www.tiktok.com/@orathai_265" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors">
