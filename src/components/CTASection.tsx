@@ -25,7 +25,7 @@ export function CTASection() {
             Tell us your dates and we'll reply with ideas and prices within a few hours.
           </p>
 
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
+          <div className="flex justify-center mb-12">
             <Button
               variant="default"
               size="xl"
@@ -33,13 +33,6 @@ export function CTASection() {
             >
               <MessageCircle className="h-5 w-5" />
               Chat on WhatsApp
-            </Button>
-            <Button
-              variant="outline"
-              size="xl"
-              className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10"
-            >
-              Send Quick Request Form
             </Button>
           </div>
 
