@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Star, CheckCircle, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-van-tour.jpg";
+import heroImage from "@/assets/hero-van-tour.webp";
 export function HeroSection() {
   return <section className="min-h-screen pt-24 pb-16 bg-gradient-hero overflow-hidden">
       <div className="container">
