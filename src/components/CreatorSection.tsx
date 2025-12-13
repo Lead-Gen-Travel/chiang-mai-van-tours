@@ -2,46 +2,50 @@ import { motion } from "framer-motion";
 import { Instagram, ExternalLink, Play, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ownerPortrait from "@/assets/owner-portrait.jpg";
-
-const instagramReels = [
-  { title: "Feeding elephants at sunrise", views: "2.1M views" },
-  { title: "Best temples in Chiang Mai at night", views: "980K views" },
-];
-
-const tiktokVideos = [
-  { title: "Day trip Chiang Mai to Pai in one minute", views: "1.3M views" },
-  { title: "What I spend as a van tour guide", views: "650K views" },
-];
-
+const instagramReels = [{
+  title: "Feeding elephants at sunrise",
+  views: "2.1M views"
+}, {
+  title: "Best temples in Chiang Mai at night",
+  views: "980K views"
+}];
+const tiktokVideos = [{
+  title: "Day trip Chiang Mai to Pai in one minute",
+  views: "1.3M views"
+}, {
+  title: "What I spend as a van tour guide",
+  views: "650K views"
+}];
 export function CreatorSection() {
-  return (
-    <section id="about" className="py-20 bg-background">
+  return <section id="about" className="py-20 bg-background">
       <div className="container">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-14"
-        >
+        <motion.div initial={{
+        opacity: 0,
+        y: 20
+      }} whileInView={{
+        opacity: 1,
+        y: 0
+      }} viewport={{
+        once: true
+      }} className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Meet Ying — Your Chiang Mai Guide and Creator
+            Meet Orethai — Your Chiang Mai Guide
           </h2>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Left - Bio */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="space-y-6"
-          >
+          <motion.div initial={{
+          opacity: 0,
+          x: -30
+        }} whileInView={{
+          opacity: 1,
+          x: 0
+        }} viewport={{
+          once: true
+        }} className="space-y-6">
             <div className="relative">
-              <img
-                src={ownerPortrait}
-                alt="Ying, tour guide at Doi Suthep temple viewpoint with happy travelers"
-                className="w-full max-w-md rounded-2xl shadow-hover mx-auto lg:mx-0"
-              />
+              <img src={ownerPortrait} alt="Ying, tour guide at Doi Suthep temple viewpoint with happy travelers" className="w-full max-w-md rounded-2xl shadow-hover mx-auto lg:mx-0" />
               <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground px-4 py-2 rounded-xl shadow-warm">
                 <span className="font-semibold">5+ years guiding</span>
               </div>
@@ -56,27 +60,33 @@ export function CreatorSection() {
               </p>
 
               <div className="grid grid-cols-3 gap-4">
-                {[
-                  { icon: "🗣️", text: "Speaks Thai & English" },
-                  { icon: "📋", text: "Licensed tour operator" },
-                  { icon: "⭐", text: "Featured by top travel pages" },
-                ].map((item, index) => (
-                  <div key={index} className="text-center p-3 bg-secondary/50 rounded-xl">
+                {[{
+                icon: "🗣️",
+                text: "Speaks Thai & English"
+              }, {
+                icon: "📋",
+                text: "Licensed tour operator"
+              }, {
+                icon: "⭐",
+                text: "Featured by top travel pages"
+              }].map((item, index) => <div key={index} className="text-center p-3 bg-secondary/50 rounded-xl">
                     <span className="text-2xl mb-2 block">{item.icon}</span>
                     <span className="text-sm text-muted-foreground">{item.text}</span>
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </div>
           </motion.div>
 
           {/* Right - Social Cards */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="space-y-6"
-          >
+          <motion.div initial={{
+          opacity: 0,
+          x: 30
+        }} whileInView={{
+          opacity: 1,
+          x: 0
+        }} viewport={{
+          once: true
+        }} className="space-y-6">
             {/* Instagram Card */}
             <div className="bg-card rounded-2xl p-6 shadow-card">
               <div className="flex items-center justify-between mb-6">
@@ -102,11 +112,7 @@ export function CreatorSection() {
 
               <p className="text-sm text-muted-foreground mb-4">Viral Reels</p>
               <div className="space-y-3">
-                {instagramReels.map((reel, index) => (
-                  <div
-                    key={index}
-                    className="flex items-center gap-3 p-3 bg-secondary/30 rounded-lg hover:bg-secondary/50 transition-colors cursor-pointer"
-                  >
+                {instagramReels.map((reel, index) => <div key={index} className="flex items-center gap-3 p-3 bg-secondary/30 rounded-lg hover:bg-secondary/50 transition-colors cursor-pointer">
                     <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center">
                       <Play className="h-5 w-5 text-primary" />
                     </div>
@@ -114,8 +120,7 @@ export function CreatorSection() {
                       <p className="text-sm font-medium text-foreground">{reel.title}</p>
                       <p className="text-xs text-muted-foreground">{reel.views}</p>
                     </div>
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </div>
 
@@ -144,11 +149,7 @@ export function CreatorSection() {
 
               <p className="text-sm text-muted-foreground mb-4">Viral Clips</p>
               <div className="space-y-3">
-                {tiktokVideos.map((video, index) => (
-                  <div
-                    key={index}
-                    className="flex items-center gap-3 p-3 bg-secondary/30 rounded-lg hover:bg-secondary/50 transition-colors cursor-pointer"
-                  >
+                {tiktokVideos.map((video, index) => <div key={index} className="flex items-center gap-3 p-3 bg-secondary/30 rounded-lg hover:bg-secondary/50 transition-colors cursor-pointer">
                     <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center">
                       <Play className="h-5 w-5 text-primary" />
                     </div>
@@ -156,13 +157,11 @@ export function CreatorSection() {
                       <p className="text-sm font-medium text-foreground">{video.title}</p>
                       <p className="text-xs text-muted-foreground">{video.views}</p>
                     </div>
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </div>
           </motion.div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
