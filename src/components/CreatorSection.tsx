@@ -3,20 +3,20 @@ import { Instagram, ExternalLink, Play, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ownerPortrait from "@/assets/orathai-portrait.jpg";
 const instagramReels = [{
-  title: "Pictures of customers",
+  title: "Making memories with amazing travelers ❤️",
   views: "5K views",
   url: "https://www.instagram.com/reel/DLwS9rFtaP6/"
 }, {
-  title: "Bathing elephants",
+  title: "Splashing with gentle giants 🐘",
   views: "3K views",
   url: "https://www.instagram.com/reel/DNxcU-10HWo/"
 }];
 const tiktokVideos = [{
-  title: "Elephant tour through the river",
+  title: "Magic moments crossing the river with elephants 🌊",
   views: "2.7M views",
   url: "https://www.tiktok.com/@orathai_265/video/7523814536130956551"
 }, {
-  title: "Baby Elephant playing",
+  title: "This baby elephant stole my heart 💕",
   views: "5.9M views",
   url: "https://www.tiktok.com/@orathai_265/video/7396548026434637064"
 }];
