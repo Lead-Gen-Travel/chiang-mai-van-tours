@@ -51,8 +51,8 @@ export function Header() {
               {link.label}
             </a>
           ))}
-          <Button variant="hero" size="lg">
-            Book Now
+          <Button variant="hero" size="lg" asChild>
+            <a href="#contact">Book Now</a>
           </Button>
         </nav>
 
@@ -86,8 +86,8 @@ export function Header() {
                   {link.label}
                 </a>
               ))}
-              <Button variant="hero" size="lg" className="mt-4">
-                Book Now
+              <Button variant="hero" size="lg" className="mt-4" asChild>
+                <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>Book Now</a>
               </Button>
             </nav>
           </motion.div>
