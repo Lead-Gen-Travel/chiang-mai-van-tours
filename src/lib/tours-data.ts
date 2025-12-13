@@ -97,7 +97,7 @@ export const tours: Tour[] = [
   {
     id: "atv-hidden-temple",
     image: atvTour,
-    title: "ATV Adventure & Hidden Temple",
+    title: "ATV Adventure & Zipline",
     description: "Explore mountain viewpoints, rice fields, and discover a temple not in the usual guide book.",
     longDescription: "Rev up for an off-road adventure through Chiang Mai's stunning countryside. Discover hidden temples, traverse rice paddies, and enjoy panoramic mountain views that most tourists never see.",
     duration: "6 hours",
