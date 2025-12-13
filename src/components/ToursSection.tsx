@@ -59,7 +59,7 @@ function TourCard({ id, image, title, description, duration, includes, price, is
         </div>
 
         <div>
-          <span className="text-xs text-muted-foreground">From</span>
+          <span className="text-xs text-muted-foreground">Starting at</span>
           <p className="text-lg font-semibold text-foreground">{price}</p>
         </div>
       </div>
