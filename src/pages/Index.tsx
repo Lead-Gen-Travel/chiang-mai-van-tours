@@ -21,9 +21,9 @@ const Index = () => {
         <HeroSection />
         <SocialProofBar />
         <ToursSection />
+        <CreatorSection />
         <VanShowcase />
         <ShuttleSection />
-        <CreatorSection />
         <WhyChooseUs />
         <ReviewsSection />
         <HowItWorks />
