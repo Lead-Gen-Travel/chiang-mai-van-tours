@@ -24,7 +24,7 @@ export const tours: Tour[] = [
   {
     id: "elephant-sanctuary-doi-suthep",
     image: elephantTour,
-    title: "Ethical Elephant Sanctuary & Doi Suthep Temple",
+    title: "Ethical Elephant Sanctuary",
     description: "Visit an ethical elephant sanctuary where you only feed and walk beside them. Then watch sunset at Doi Suthep with a view over Chiang Mai.",
     longDescription: "Experience the magic of ethical elephant encounters followed by one of Thailand's most sacred temples. This full-day tour combines wildlife, spirituality, and breathtaking views in one unforgettable journey.",
     duration: "8 hours",
