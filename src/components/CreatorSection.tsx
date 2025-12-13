@@ -3,20 +3,20 @@ import { Instagram, ExternalLink, Play, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ownerPortrait from "@/assets/orathai-portrait.jpg";
 const instagramReels = [{
-  title: "Making memories with amazing travelers ❤️",
+  title: "Making memories with amazing travelers",
   views: "5K views",
   url: "https://www.instagram.com/reel/DLwS9rFtaP6/"
 }, {
-  title: "Splashing with gentle giants 🐘",
+  title: "Splashing with gentle giants",
   views: "3K views",
   url: "https://www.instagram.com/reel/DNxcU-10HWo/"
 }];
 const tiktokVideos = [{
-  title: "Magic moments crossing the river with elephants 🌊",
+  title: "Magic moments crossing the river with elephants",
   views: "2.7M views",
   url: "https://www.tiktok.com/@orathai_265/video/7523814536130956551"
 }, {
-  title: "This baby elephant stole my heart 💕",
+  title: "This baby elephant stole my heart",
   views: "5.9M views",
   url: "https://www.tiktok.com/@orathai_265/video/7396548026434637064"
 }];
@@ -91,43 +91,6 @@ export function CreatorSection() {
         }} viewport={{
           once: true
         }} className="space-y-6">
-            {/* Instagram Card */}
-            <div className="bg-card rounded-2xl p-6 shadow-card">
-              <div className="flex items-center justify-between mb-6">
-                <div className="flex items-center gap-3">
-                  <div className="h-12 w-12 rounded-full bg-gradient-to-br from-pink-500 via-red-500 to-yellow-500 flex items-center justify-center">
-                    <Instagram className="h-6 w-6 text-primary-foreground" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-foreground">@orathai_265</p>
-                    <div className="flex items-center gap-1 text-sm text-muted-foreground">
-                      <Users className="h-4 w-4" />
-                      <span>14K followers</span>
-                    </div>
-                  </div>
-                </div>
-                <Button variant="outline" size="sm" asChild>
-                  <a href="https://www.instagram.com/orathai_265/" target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="h-4 w-4" />
-                    View
-                  </a>
-                </Button>
-              </div>
-
-              <p className="text-sm text-muted-foreground mb-4">Viral Reels</p>
-              <div className="space-y-3">
-                {instagramReels.map((reel, index) => <a key={index} href={reel.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 bg-secondary/30 rounded-lg hover:bg-secondary/50 transition-colors cursor-pointer">
-                    <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                      <Play className="h-5 w-5 text-primary" />
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-sm font-medium text-foreground">{reel.title}</p>
-                      <p className="text-xs text-muted-foreground">{reel.views}</p>
-                    </div>
-                  </a>)}
-              </div>
-            </div>
-
             {/* TikTok Card */}
             <div className="bg-card rounded-2xl p-6 shadow-card">
               <div className="flex items-center justify-between mb-6">
@@ -162,6 +125,43 @@ export function CreatorSection() {
                     <div className="flex-1">
                       <p className="text-sm font-medium text-foreground">{video.title}</p>
                       <p className="text-xs text-muted-foreground">{video.views}</p>
+                    </div>
+                  </a>)}
+              </div>
+            </div>
+
+            {/* Instagram Card */}
+            <div className="bg-card rounded-2xl p-6 shadow-card">
+              <div className="flex items-center justify-between mb-6">
+                <div className="flex items-center gap-3">
+                  <div className="h-12 w-12 rounded-full bg-gradient-to-br from-pink-500 via-red-500 to-yellow-500 flex items-center justify-center">
+                    <Instagram className="h-6 w-6 text-primary-foreground" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground">@orathai_265</p>
+                    <div className="flex items-center gap-1 text-sm text-muted-foreground">
+                      <Users className="h-4 w-4" />
+                      <span>14K followers</span>
+                    </div>
+                  </div>
+                </div>
+                <Button variant="outline" size="sm" asChild>
+                  <a href="https://www.instagram.com/orathai_265/" target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="h-4 w-4" />
+                    View
+                  </a>
+                </Button>
+              </div>
+
+              <p className="text-sm text-muted-foreground mb-4">Viral Reels</p>
+              <div className="space-y-3">
+                {instagramReels.map((reel, index) => <a key={index} href={reel.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 bg-secondary/30 rounded-lg hover:bg-secondary/50 transition-colors cursor-pointer">
+                    <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                      <Play className="h-5 w-5 text-primary" />
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-sm font-medium text-foreground">{reel.title}</p>
+                      <p className="text-xs text-muted-foreground">{reel.views}</p>
                     </div>
                   </a>)}
               </div>
