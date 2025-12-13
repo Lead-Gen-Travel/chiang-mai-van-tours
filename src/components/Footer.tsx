@@ -47,7 +47,7 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-background/70">
-              <li>WhatsApp: +66 123 456 789</li>
+              <li>WhatsApp: +66 81 764 5420</li>
               <li>Line: @yingvantours</li>
               <li>Email: hello@chiangmaivantours.com</li>
             </ul>

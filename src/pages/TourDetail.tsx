@@ -156,7 +156,7 @@ export default function TourDetail() {
               <div className="space-y-3">
                 <Button variant="whatsapp" size="lg" className="w-full" asChild>
                   <a 
-                    href="https://wa.me/66XXXXXXXXX" 
+                    href="https://wa.me/66817645420" 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
