@@ -2,22 +2,23 @@ import { motion } from "framer-motion";
 import { Star, CheckCircle, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-van-tour.jpg";
-
 export function HeroSection() {
-  return (
-    <section className="min-h-screen pt-24 pb-16 bg-gradient-hero overflow-hidden">
+  return <section className="min-h-screen pt-24 pb-16 bg-gradient-hero overflow-hidden">
       <div className="container">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Content */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            className="order-2 lg:order-1"
-          >
+          <motion.div initial={{
+          opacity: 0,
+          x: -30
+        }} animate={{
+          opacity: 1,
+          x: 0
+        }} transition={{
+          duration: 0.8
+        }} className="order-2 lg:order-1">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
               Private van tours in Chiang Mai with a{" "}
-              <span className="text-gradient">creator you already trust</span>
+              <span className="text-gradient">Orethai - The Local Legend       </span>
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
@@ -27,23 +28,18 @@ export function HeroSection() {
 
             {/* Key Features */}
             <ul className="space-y-3 mb-10">
-              {[
-                "Full day and half day private tours",
-                "Shuttle service up to three hours from Chiang Mai",
-                "English speaking driver and guide",
-                "Safe, clean vans with strong air conditioning",
-              ].map((feature, index) => (
-                <motion.li
-                  key={index}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.4 + index * 0.1 }}
-                  className="flex items-center gap-3 text-foreground"
-                >
+              {["Full day and half day private tours", "Shuttle service up to three hours from Chiang Mai", "English speaking driver and guide", "Safe, clean vans with strong air conditioning"].map((feature, index) => <motion.li key={index} initial={{
+              opacity: 0,
+              x: -20
+            }} animate={{
+              opacity: 1,
+              x: 0
+            }} transition={{
+              delay: 0.4 + index * 0.1
+            }} className="flex items-center gap-3 text-foreground">
                   <CheckCircle className="h-5 w-5 text-accent flex-shrink-0" />
                   <span>{feature}</span>
-                </motion.li>
-              ))}
+                </motion.li>)}
             </ul>
 
             {/* CTA Buttons */}
@@ -59,18 +55,18 @@ export function HeroSection() {
           </motion.div>
 
           {/* Right Image */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="order-1 lg:order-2 relative"
-          >
+          <motion.div initial={{
+          opacity: 0,
+          x: 30
+        }} animate={{
+          opacity: 1,
+          x: 0
+        }} transition={{
+          duration: 0.8,
+          delay: 0.2
+        }} className="order-1 lg:order-2 relative">
             <div className="relative rounded-2xl overflow-hidden shadow-hover">
-              <img
-                src={heroImage}
-                alt="Chiang Mai private van tour with friendly guide and happy travelers at scenic mountain viewpoint"
-                className="w-full h-auto object-cover aspect-[4/3]"
-              />
+              <img src={heroImage} alt="Chiang Mai private van tour with friendly guide and happy travelers at scenic mountain viewpoint" className="w-full h-auto object-cover aspect-[4/3]" />
               
               {/* Rating Badge */}
               <div className="absolute bottom-4 right-4 bg-background/95 backdrop-blur-sm rounded-xl px-4 py-3 shadow-card">
@@ -88,6 +84,5 @@ export function HeroSection() {
           </motion.div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
