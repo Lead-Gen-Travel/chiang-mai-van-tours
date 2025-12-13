@@ -56,7 +56,7 @@ export function CreatorSection() {
                 <span className="text-2xl">🙏</span> Sawadee ka! I'm Ying. I started this van service to show travelers
                 the Chiang Mai I love. When I'm not driving guests around the mountains, I'm making travel videos on
                 Instagram and TikTok for my community of more than
-                <span className="font-semibold text-primary"> 500K followers</span>.
+                <span className="font-semibold text-primary"> 220K followers</span>.
               </p>
 
               <div className="grid grid-cols-3 gap-4">
