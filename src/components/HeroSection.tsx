@@ -42,16 +42,11 @@ export function HeroSection() {
                 </motion.li>)}
             </ul>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-wrap gap-4">
-              <Button variant="whatsapp" size="xl">
-                <MessageCircle className="h-5 w-5" />
-                WhatsApp us to plan your trip
-              </Button>
-              <Button variant="outline" size="xl">
-                View popular tours
-              </Button>
-            </div>
+            {/* CTA Button */}
+            <Button variant="whatsapp" size="xl">
+              <MessageCircle className="h-5 w-5" />
+              WhatsApp us to plan your trip
+            </Button>
           </motion.div>
 
           {/* Right Image */}
