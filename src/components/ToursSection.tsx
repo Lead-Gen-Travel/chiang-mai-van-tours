@@ -1,22 +1,22 @@
 import { motion } from "framer-motion";
 import { Clock, Users, ArrowRight, Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import elephantTour from "@/assets/tour-elephant.jpg";
-import raftingTour from "@/assets/tour-rafting.jpg";
-import atvTour from "@/assets/tour-atv.jpg";
+import { tours } from "@/lib/tours-data";
 
 interface TourCardProps {
+  id: string;
   image: string;
   title: string;
   description: string;
   duration: string;
-  includes: string;
+  includes: string[];
   price: string;
   isCustom?: boolean;
   delay?: number;
 }
 
-function TourCard({ image, title, description, duration, includes, price, isCustom, delay = 0 }: TourCardProps) {
+function TourCard({ id, image, title, description, duration, includes, price, isCustom, delay = 0 }: TourCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -54,7 +54,7 @@ function TourCard({ image, title, description, duration, includes, price, isCust
           </div>
           <div className="flex items-center gap-2 text-muted-foreground">
             <Users className="h-4 w-4 text-accent" />
-            <span>{includes}</span>
+            <span>{includes[0]}</span>
           </div>
         </div>
 
@@ -63,9 +63,11 @@ function TourCard({ image, title, description, duration, includes, price, isCust
             <span className="text-xs text-muted-foreground">From</span>
             <p className="text-lg font-semibold text-foreground">{price}</p>
           </div>
-          <Button variant="outline" size="sm" className="group/btn">
-            View details
-            <ArrowRight className="h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
+          <Button variant="outline" size="sm" className="group/btn" asChild>
+            <Link to={`/tours/${id}`}>
+              View details
+              <ArrowRight className="h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
+            </Link>
           </Button>
         </div>
       </div>
@@ -74,42 +76,6 @@ function TourCard({ image, title, description, duration, includes, price, isCust
 }
 
 export function ToursSection() {
-  const tours = [
-    {
-      image: elephantTour,
-      title: "Ethical Elephant Sanctuary & Doi Suthep Temple",
-      description: "Visit an ethical elephant sanctuary where you only feed and walk beside them. Then watch sunset at Doi Suthep with a view over Chiang Mai.",
-      duration: "8 hours",
-      includes: "Private van, guide, lunch option",
-      price: "฿4,500 per group",
-    },
-    {
-      image: raftingTour,
-      title: "White Water Rafting & Jungle Village",
-      description: "Ride the river with certified guides, then relax in a mountain village cafe before heading back to town.",
-      duration: "7 hours",
-      includes: "Private van, safety gear, snacks",
-      price: "฿3,800 per group",
-    },
-    {
-      image: atvTour,
-      title: "ATV Adventure & Hidden Temple",
-      description: "Explore mountain viewpoints, rice fields, and discover a temple not in the usual guide book.",
-      duration: "6 hours",
-      includes: "Private van, ATV rental, helmet",
-      price: "฿4,200 per group",
-    },
-    {
-      image: elephantTour,
-      title: "Build Your Perfect Chiang Mai Day",
-      description: "Tell us what you like and we design your route. Food, temples, coffee farms, hot springs — you choose.",
-      duration: "Flexible",
-      includes: "Custom itinerary, private van",
-      price: "Custom quote",
-      isCustom: true,
-    },
-  ];
-
   return (
     <section id="tours" className="py-20 bg-background">
       <div className="container">
@@ -129,7 +95,18 @@ export function ToursSection() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {tours.map((tour, index) => (
-            <TourCard key={tour.title} {...tour} delay={index * 0.1} />
+            <TourCard 
+              key={tour.id} 
+              id={tour.id}
+              image={tour.image}
+              title={tour.title}
+              description={tour.description}
+              duration={tour.duration}
+              includes={tour.includes}
+              price={tour.price}
+              isCustom={tour.isCustom}
+              delay={index * 0.1} 
+            />
           ))}
         </div>
       </div>
