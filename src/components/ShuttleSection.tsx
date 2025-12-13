@@ -45,9 +45,11 @@ export function ShuttleSection() {
               </div>
             </div>
 
-            <Button variant="hero" size="lg">
-              Get Shuttle Quote
-              <ArrowRight className="h-5 w-5" />
+            <Button variant="hero" size="lg" asChild>
+              <a href="#contact">
+                Get Shuttle Quote
+                <ArrowRight className="h-5 w-5" />
+              </a>
             </Button>
           </motion.div>
 
