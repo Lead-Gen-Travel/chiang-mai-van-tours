@@ -77,15 +77,6 @@ export function ReviewsSection() {
           ))}
         </div>
 
-        <div className="text-center mt-10">
-          <a
-            href="#"
-            className="text-primary font-medium hover:underline inline-flex items-center gap-2"
-          >
-            View all reviews on Google & TripAdvisor
-            <span>→</span>
-          </a>
-        </div>
       </div>
     </section>
   );
