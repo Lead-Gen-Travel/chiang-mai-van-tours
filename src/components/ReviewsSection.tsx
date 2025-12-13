@@ -6,19 +6,19 @@ const reviews = [
     name: "Sarah M.",
     country: "Australia",
     rating: 5,
-    text: "We booked a full day elephant and temple trip. Ying picked us up at 7 in the morning, had snacks ready, and took photos for us the whole day. Felt more like traveling with a friend than a tour.",
+    text: "We booked a full day elephant and temple trip. Orethai picked us up at 7 in the morning, had snacks ready, and took photos for us the whole day. Felt more like traveling with a friend than a tour.",
   },
   {
     name: "Thomas K.",
     country: "Germany",
     rating: 5,
-    text: "The white water rafting was incredible! Ying knew all the best spots for photos and made sure we had an amazing time. The lunch at the jungle cafe was a bonus surprise.",
+    text: "The white water rafting was incredible! Orethai knew all the best spots for photos and made sure we had an amazing time. The lunch at the jungle cafe was a bonus surprise.",
   },
   {
     name: "Emily & Jake",
     country: "USA",
     rating: 5,
-    text: "Best decision we made in Thailand. Ying customized our entire day based on what we wanted to see. The van was spotless and the AC was a lifesaver. Highly recommend!",
+    text: "Best decision we made in Thailand. Orethai customized our entire day based on what we wanted to see. The van was spotless and the AC was a lifesaver. Highly recommend!",
   },
 ];
 
