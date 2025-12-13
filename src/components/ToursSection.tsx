@@ -58,17 +58,9 @@ function TourCard({ id, image, title, description, duration, includes, price, is
           </div>
         </div>
 
-        <div className="flex items-center justify-between">
-          <div>
-            <span className="text-xs text-muted-foreground">From</span>
-            <p className="text-lg font-semibold text-foreground">{price}</p>
-          </div>
-          <Button variant="outline" size="sm" className="group/btn" asChild>
-            <Link to={`/tours/${id}`}>
-              View details
-              <ArrowRight className="h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
-            </Link>
-          </Button>
+        <div>
+          <span className="text-xs text-muted-foreground">From</span>
+          <p className="text-lg font-semibold text-foreground">{price}</p>
         </div>
       </div>
     </motion.div>
