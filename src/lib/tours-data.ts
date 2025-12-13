@@ -1,6 +1,7 @@
 import elephantTour from "@/assets/tour-elephant.jpg";
 import raftingTour from "@/assets/tour-rafting.jpg";
 import atvTour from "@/assets/tour-atv.jpg";
+import customTour from "@/assets/tour-custom.jpg";
 
 export interface Tour {
   id: string;
@@ -131,7 +132,7 @@ export const tours: Tour[] = [
   },
   {
     id: "custom-tour",
-    image: elephantTour,
+    image: customTour,
     title: "Build Your Perfect Chiang Mai Day",
     description: "Tell us what you like and we design your route. Food, temples, coffee farms, hot springs — you choose.",
     longDescription: "Your perfect day, your way. Tell us your interests and we'll create a custom itinerary just for you. Whether you want to explore hidden waterfalls, visit local markets, or discover the best coffee farms, we'll make it happen.",
