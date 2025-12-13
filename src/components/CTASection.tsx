@@ -45,10 +45,6 @@ export function CTASection() {
               <Mail className="h-5 w-5" />
               <span>hello@chiangmaivantours.com</span>
             </a>
-            <span className="flex items-center gap-2">
-              <MessageCircle className="h-5 w-5" />
-              <span>Line: @yingvantours</span>
-            </span>
           </div>
         </motion.div>
       </div>
