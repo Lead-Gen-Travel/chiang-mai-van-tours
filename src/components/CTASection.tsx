@@ -30,9 +30,12 @@ export function CTASection() {
               variant="default"
               size="xl"
               className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"
+              asChild
             >
-              <MessageCircle className="h-5 w-5" />
-              Chat on WhatsApp
+              <a href="https://wa.me/66817645420" target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="h-5 w-5" />
+                Chat on WhatsApp
+              </a>
             </Button>
           </div>
 
