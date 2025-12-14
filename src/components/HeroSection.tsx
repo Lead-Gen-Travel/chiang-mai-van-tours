@@ -18,7 +18,7 @@ export function HeroSection() {
         }} className="order-2 lg:order-1">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
               Private van tours in Chiang Mai with{" "}
-              <span className="text-gradient">Orethai - The Local Legend</span>
+              <span className="text-gradient">Orathai - The Local Legend</span>
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
