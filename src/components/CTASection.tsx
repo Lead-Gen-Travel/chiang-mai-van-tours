@@ -33,7 +33,7 @@ export function CTASection() {
               asChild
             >
               <a href="https://buy.stripe.com/fZu7sM7YtfAlcVS5sbbEA01" target="_blank" rel="noopener noreferrer">
-                Pay deposit to book your tour
+                Reserve your tour
               </a>
             </Button>
             <p className="text-sm text-primary-foreground/80">
