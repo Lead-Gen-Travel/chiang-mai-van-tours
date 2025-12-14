@@ -61,9 +61,9 @@ export const tours: Tour[] = [
   {
     id: "white-water-rafting",
     image: raftingTour,
-    title: "White Water Rafting & Jungle Village",
-    description: "Ride the river with certified guides, then relax in a mountain village cafe before heading back to town.",
-    longDescription: "Get your adrenaline pumping on the Mae Taeng River with class 3-4 rapids, then unwind in a peaceful mountain village. Perfect for adventure seekers who also appreciate authentic Thai culture.",
+    title: "White Water Rafting & Sacred Temples",
+    description: "Ride the river with certified guides, then explore ancient Thai temples and their stunning architecture.",
+    longDescription: "Get your adrenaline pumping on the Mae Taeng River with class 3-4 rapids, then discover the spiritual side of Chiang Mai with visits to beautiful Buddhist temples. Perfect for adventure seekers who also appreciate Thai culture and history.",
     duration: "7 hours",
     includes: [
       "Private van with AC",
@@ -71,7 +71,7 @@ export const tours: Tour[] = [
       "All safety equipment",
       "Rafting session (10km)",
       "Light lunch and refreshments",
-      "Village cafe stop",
+      "Temple entrance fees",
       "Hotel pickup and drop-off"
     ],
     price: "฿3,800 per group",
@@ -79,8 +79,8 @@ export const tours: Tour[] = [
       "10km of exciting rapids",
       "Professional certified guides",
       "Beautiful jungle scenery",
-      "Visit authentic mountain village",
-      "Relax at a riverside cafe"
+      "Visit stunning Buddhist temples",
+      "Learn about Thai spiritual traditions"
     ],
     itinerary: [
       { time: "8:00 AM", activity: "Hotel pickup" },
@@ -89,8 +89,8 @@ export const tours: Tour[] = [
       { time: "10:30 AM", activity: "Start rafting adventure" },
       { time: "12:30 PM", activity: "Finish rafting, shower and change" },
       { time: "1:00 PM", activity: "Lunch at riverside restaurant" },
-      { time: "2:30 PM", activity: "Visit mountain village" },
-      { time: "3:30 PM", activity: "Coffee at village cafe" },
+      { time: "2:30 PM", activity: "Visit ancient Thai temples" },
+      { time: "3:30 PM", activity: "Explore temple grounds and take photos" },
       { time: "5:00 PM", activity: "Return to hotel" }
     ]
   },
