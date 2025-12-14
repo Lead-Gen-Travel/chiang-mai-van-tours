@@ -37,7 +37,7 @@ export function CTASection() {
               </a>
             </Button>
             <p className="text-sm text-primary-foreground/80">
-              Deposit is 2,500 baht. Remaining balance is paid on the day of the tour.
+              $75 deposit. Remaining balance is paid on the day of the tour.
             </p>
           </div>
 
