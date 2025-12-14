@@ -44,7 +44,7 @@ export function HeroSection() {
 
             {/* CTA Button */}
             <Button variant="hero" size="xl" asChild>
-              <a href="https://buy.stripe.com/fZu7sM7YtfAlcVS5sbbEA01" target="_blank" rel="noopener noreferrer">
+              <a href="https://buy.stripe.com/dRm00k92x73P1da3k3bEA02" target="_blank" rel="noopener noreferrer">
                 Reserve your tour
               </a>
             </Button>
