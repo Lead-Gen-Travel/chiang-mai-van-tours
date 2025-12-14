@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Clock, Users, Check, ArrowLeft, MapPin, MessageCircle } from "lucide-react";
+import { Clock, Users, Check, ArrowLeft, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -154,18 +154,17 @@ export default function TourDetail() {
               </div>
 
               <div className="space-y-3">
-                <Button variant="whatsapp" size="lg" className="w-full" asChild>
+                <Button variant="hero" size="lg" className="w-full" asChild>
                   <a 
-                    href="https://wa.me/66817645420" 
+                    href="https://buy.stripe.com/fZu7sM7YtfAlcVS5sbbEA01" 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
-                    <MessageCircle className="h-5 w-5 mr-2" />
-                    Book on WhatsApp
+                    Pay deposit to book
                   </a>
                 </Button>
                 <p className="text-xs text-center text-muted-foreground">
-                  We usually reply within a few hours
+                  Deposit is 2,500 baht. Remaining balance is paid on the day of the tour.
                 </p>
               </div>
             </motion.div>

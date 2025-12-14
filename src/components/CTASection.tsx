@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MessageCircle, Mail, Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function CTASection() {
@@ -25,18 +25,20 @@ export function CTASection() {
             Tell us your dates and we'll reply with ideas and prices within a few hours.
           </p>
 
-          <div className="flex justify-center mb-12">
+          <div className="flex flex-col items-center gap-3 mb-12">
             <Button
               variant="default"
               size="xl"
               className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"
               asChild
             >
-              <a href="https://wa.me/66817645420" target="_blank" rel="noopener noreferrer">
-                <MessageCircle className="h-5 w-5" />
-                Chat on WhatsApp
+              <a href="https://buy.stripe.com/fZu7sM7YtfAlcVS5sbbEA01" target="_blank" rel="noopener noreferrer">
+                Pay deposit to book your tour
               </a>
             </Button>
+            <p className="text-sm text-primary-foreground/80">
+              Deposit is 2,500 baht. Remaining balance is paid on the day of the tour.
+            </p>
           </div>
 
           <div className="flex flex-wrap justify-center gap-8 text-primary-foreground/80">
