@@ -58,11 +58,6 @@ function TourCard({ id, image, title, description, duration, includes, price, is
           </div>
         </div>
 
-        <div className="mb-4">
-          <span className="text-xs text-muted-foreground">Starting at</span>
-          <p className="text-lg font-semibold text-foreground">{price}</p>
-        </div>
-
         <a 
           href="https://buy.stripe.com/fZu7sM7YtfAlcVS5sbbEA01" 
           target="_blank" 
