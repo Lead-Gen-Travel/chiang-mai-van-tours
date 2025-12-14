@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Star, CheckCircle, MessageCircle } from "lucide-react";
+import { Star, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-van-tour.webp";
 export function HeroSection() {
@@ -43,12 +43,14 @@ export function HeroSection() {
             </ul>
 
             {/* CTA Button */}
-            <Button variant="whatsapp" size="xl" asChild>
-              <a href="https://wa.me/66817645420" target="_blank" rel="noopener noreferrer">
-                <MessageCircle className="h-5 w-5" />
-                WhatsApp us to plan your trip
+            <Button variant="hero" size="xl" asChild>
+              <a href="https://buy.stripe.com/fZu7sM7YtfAlcVS5sbbEA01" target="_blank" rel="noopener noreferrer">
+                Pay deposit to book your tour
               </a>
             </Button>
+            <p className="text-sm text-muted-foreground mt-3">
+              Deposit is 2,500 baht. Remaining balance is paid on the day of the tour.
+            </p>
           </motion.div>
 
           {/* Right Image */}
