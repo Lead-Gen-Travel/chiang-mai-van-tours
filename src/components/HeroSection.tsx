@@ -49,7 +49,7 @@ export function HeroSection() {
               </a>
             </Button>
             <p className="text-sm text-muted-foreground mt-3">
-              Deposit is 2,500 baht. Remaining balance is paid on the day of the tour.
+              $75 deposit. Remaining balance is paid on the day of the tour.
             </p>
           </motion.div>
 
