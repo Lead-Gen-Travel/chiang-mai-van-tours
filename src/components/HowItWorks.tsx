@@ -3,22 +3,22 @@ import { MessageCircle, CalendarCheck, CreditCard } from "lucide-react";
 
 const steps = [
   {
-    icon: MessageCircle,
+    icon: CreditCard,
     step: "1",
-    title: "Send us your dates and group size",
-    description: "Message us on WhatsApp or fill out our quick form",
+    title: "Pay a small deposit and fill out your info",
+    description: "Secure your booking with a 2,500 baht deposit",
+  },
+  {
+    icon: MessageCircle,
+    step: "2",
+    title: "Speak with your tour guide",
+    description: "Your guide will reach out to plan and customize your adventure",
   },
   {
     icon: CalendarCheck,
-    step: "2",
-    title: "Choose a tour or build your own day",
-    description: "Pick from popular tours or customize your adventure",
-  },
-  {
-    icon: CreditCard,
     step: "3",
-    title: "Confirm and pay a small deposit",
-    description: "Lock in your van and you're all set!",
+    title: "Build out your perfect day",
+    description: "Work together to create your ideal Chiang Mai experience",
   },
 ];
 
