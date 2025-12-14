@@ -49,7 +49,7 @@ export function Footer() {
             <ul className="space-y-2 text-background/70">
               <li>WhatsApp: +66 81 764 5420</li>
               
-              <li>Email: hello@chiangmaivantours.com</li>
+              <li>Email: tonaor420@gmail.com</li>
             </ul>
           </div>
         </div>
