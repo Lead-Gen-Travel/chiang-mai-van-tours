@@ -5,8 +5,8 @@ const steps = [
   {
     icon: CreditCard,
     step: "1",
-    title: "Pay a small deposit and fill out your info",
-    description: "Secure your booking with a 2,500 baht deposit",
+    title: "Reserve your spot",
+    description: "Secure your tour with a quick booking and small deposit",
   },
   {
     icon: MessageCircle,

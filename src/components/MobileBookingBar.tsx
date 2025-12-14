@@ -7,7 +7,7 @@ export function MobileBookingBar() {
         rel="noopener noreferrer"
         className="flex items-center justify-center gap-3 w-full h-14 bg-gradient-warm text-primary-foreground rounded-xl font-semibold shadow-warm hover:shadow-hover transition-all"
       >
-        Pay deposit to book
+        Reserve your tour
       </a>
     </div>
   );

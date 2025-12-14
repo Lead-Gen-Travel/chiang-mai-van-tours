@@ -69,7 +69,7 @@ function TourCard({ id, image, title, description, duration, includes, price, is
           rel="noopener noreferrer"
           className="block w-full text-center py-3 bg-gradient-warm text-primary-foreground rounded-lg font-semibold hover:shadow-hover transition-all"
         >
-          Pay deposit to book
+          Reserve this tour
         </a>
       </div>
     </motion.div>

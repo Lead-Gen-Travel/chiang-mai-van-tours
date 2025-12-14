@@ -160,7 +160,7 @@ export default function TourDetail() {
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
-                    Pay deposit to book
+                    Reserve this tour
                   </a>
                 </Button>
                 <p className="text-xs text-center text-muted-foreground">
