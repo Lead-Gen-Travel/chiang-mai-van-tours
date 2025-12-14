@@ -59,7 +59,7 @@ function TourCard({ id, image, title, description, duration, includes, price, is
         </div>
 
         <a 
-          href="https://buy.stripe.com/fZu7sM7YtfAlcVS5sbbEA01" 
+          href="https://buy.stripe.com/dRm00k92x73P1da3k3bEA02" 
           target="_blank" 
           rel="noopener noreferrer"
           className="block w-full text-center py-3 bg-gradient-warm text-primary-foreground rounded-lg font-semibold hover:shadow-hover transition-all"

@@ -156,7 +156,7 @@ export default function TourDetail() {
               <div className="space-y-3">
                 <Button variant="hero" size="lg" className="w-full" asChild>
                   <a 
-                    href="https://buy.stripe.com/fZu7sM7YtfAlcVS5sbbEA01" 
+                    href="https://buy.stripe.com/dRm00k92x73P1da3k3bEA02" 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
