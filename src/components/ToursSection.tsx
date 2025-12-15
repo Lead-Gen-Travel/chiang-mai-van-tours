@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Clock, Users, ArrowRight, Sparkles } from "lucide-react";
+import { Clock, Users, Sparkles, UtensilsCrossed } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { tours } from "@/lib/tours-data";
@@ -55,6 +55,10 @@ function TourCard({ id, image, title, description, duration, includes, price, is
           <div className="flex items-center gap-2 text-muted-foreground">
             <Users className="h-4 w-4 text-accent" />
             <span>{includes[0]}</span>
+          </div>
+          <div className="flex items-center gap-2 text-muted-foreground">
+            <UtensilsCrossed className="h-4 w-4 text-accent" />
+            <span>Lunch & water included</span>
           </div>
         </div>
 
