@@ -4,6 +4,9 @@ import atvTour from "@/assets/tour-atv.jpg";
 import customTour from "@/assets/tour-custom.jpg";
 import natureTourElephant from "@/assets/nature-tour-elephant.webp";
 import natureTourWaterfall from "@/assets/nature-tour-waterfall.webp";
+import culturalTourElephant from "@/assets/cultural-tour-elephant.webp";
+import culturalTourTemple from "@/assets/cultural-tour-temple.webp";
+import culturalTourCafe from "@/assets/cultural-tour-cafe.webp";
 
 export interface Tour {
   id: string;
@@ -105,8 +108,8 @@ export const tours: Tour[] = [
   },
   {
     id: "elephant-temples-cafe",
-    image: atvTour,
-    images: [atvTour, elephantTour, customTour],
+    image: culturalTourElephant,
+    images: [culturalTourElephant, culturalTourTemple, culturalTourCafe],
     category: "Cultural Tour",
     title: "Elephants, Temples & Ancient Cafe",
     description: "A perfect blend of wildlife, spirituality, and culture. Meet elephants, explore sacred temples, and relax at a hidden vintage cafe.",
