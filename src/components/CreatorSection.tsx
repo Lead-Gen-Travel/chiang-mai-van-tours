@@ -57,7 +57,7 @@ export function CreatorSection() {
 
             <div className="bg-card rounded-2xl p-8 shadow-card">
               <p className="text-lg text-foreground mb-6 leading-relaxed">
-                <span className="text-2xl">🙏</span> Sawadee ka! I'm Orathai, 42 years old, born and raised in Thailand. I started this van service to show travelers
+                <span className="text-2xl">🙏</span> Sawadee ka! I'm Orathai, 42 years old, born and raised in Thailand. I love adventure and started this van service to show travelers
                 the Chiang Mai I love. When I'm not driving guests around the mountains, I'm making travel videos on
                 Instagram and TikTok for my community of more than
                 <span className="font-semibold text-primary"> 220K followers</span>.
