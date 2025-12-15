@@ -2,6 +2,8 @@ import elephantTour from "@/assets/tour-elephant.jpg";
 import raftingTour from "@/assets/tour-rafting.jpg";
 import atvTour from "@/assets/tour-atv.jpg";
 import customTour from "@/assets/tour-custom.jpg";
+import natureTourElephant from "@/assets/nature-tour-elephant.webp";
+import natureTourWaterfall from "@/assets/nature-tour-waterfall.webp";
 
 export interface Tour {
   id: string;
@@ -65,8 +67,8 @@ export const tours: Tour[] = [
   },
   {
     id: "elephant-sticky-waterfall",
-    image: raftingTour,
-    images: [raftingTour, elephantTour, customTour],
+    image: natureTourElephant,
+    images: [natureTourElephant, natureTourWaterfall],
     category: "Nature Tour",
     title: "Elephants & Sticky Waterfall",
     description: "Meet rescued elephants in the morning, then climb the magical Sticky Waterfall where you can walk straight up the rocks.",
