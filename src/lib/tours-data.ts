@@ -6,6 +6,7 @@ import customTour from "@/assets/tour-custom.jpg";
 export interface Tour {
   id: string;
   image: string;
+  category: string;
   title: string;
   description: string;
   longDescription: string;
@@ -24,7 +25,8 @@ export const tours: Tour[] = [
   {
     id: "elephant-atv-rafting",
     image: elephantTour,
-    title: "Elephant, ATV & White Water Rafting",
+    category: "Adventure Tour",
+    title: "Elephants, ATV & White Water Rafting",
     description: "The ultimate adventure day: feed elephants at an ethical sanctuary, ride ATVs through the jungle, and conquer exciting rapids.",
     longDescription: "Pack three incredible experiences into one unforgettable day. Start with a heartwarming visit to rescued elephants, get your adrenaline pumping on ATV trails, and finish with thrilling white water rafting on the Mae Taeng River.",
     duration: "10 hours",
@@ -62,7 +64,8 @@ export const tours: Tour[] = [
   {
     id: "elephant-sticky-waterfall",
     image: raftingTour,
-    title: "Elephant & Sticky Waterfall",
+    category: "Nature Tour",
+    title: "Elephants & Sticky Waterfall",
     description: "Meet rescued elephants in the morning, then climb the magical Sticky Waterfall where you can walk straight up the rocks.",
     longDescription: "Experience the best of Chiang Mai's natural wonders. Connect with gentle giants at an ethical elephant sanctuary, then discover the unique Sticky Waterfall where mineral deposits let you climb right up the cascading water.",
     duration: "8 hours",
@@ -98,6 +101,7 @@ export const tours: Tour[] = [
   {
     id: "elephant-temples-cafe",
     image: atvTour,
+    category: "Cultural Tour",
     title: "Elephants, Temples & Ancient Cafe",
     description: "A perfect blend of wildlife, spirituality, and culture. Meet elephants, explore sacred temples, and relax at a hidden vintage cafe.",
     longDescription: "Discover the soul of Chiang Mai in one beautiful day. Start with an intimate elephant encounter, visit stunning Buddhist temples rich with history, and end at a charming ancient cafe that feels like stepping back in time.",
@@ -134,6 +138,7 @@ export const tours: Tour[] = [
   {
     id: "custom-tour",
     image: customTour,
+    category: "Custom Tour",
     title: "Build Your Perfect Chiang Mai Day",
     description: "Tell us what you like and we design your route. Food, temples, coffee farms, hot springs — you choose.",
     longDescription: "Your perfect day, your way. Tell us your interests and we'll create a custom itinerary just for you. Whether you want to explore hidden waterfalls, visit local markets, or discover the best coffee farms, we'll make it happen.",
