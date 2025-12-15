@@ -7,6 +7,7 @@ import { tours } from "@/lib/tours-data";
 interface TourCardProps {
   id: string;
   image: string;
+  category: string;
   title: string;
   description: string;
   duration: string;
@@ -16,7 +17,7 @@ interface TourCardProps {
   delay?: number;
 }
 
-function TourCard({ id, image, title, description, duration, includes, price, isCustom, delay = 0 }: TourCardProps) {
+function TourCard({ id, image, category, title, description, duration, includes, price, isCustom, delay = 0 }: TourCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -40,6 +41,9 @@ function TourCard({ id, image, title, description, duration, includes, price, is
       </div>
       
       <div className="p-6">
+        <span className="text-xs font-semibold uppercase tracking-wider text-primary mb-1 block">
+          {category}
+        </span>
         <h3 className="font-serif text-xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
           {title}
         </h3>
@@ -91,13 +95,14 @@ export function ToursSection() {
               key={tour.id} 
               id={tour.id}
               image={tour.image}
+              category={tour.category}
               title={tour.title}
               description={tour.description}
               duration={tour.duration}
               includes={tour.includes}
               price={tour.price}
               isCustom={tour.isCustom}
-              delay={index * 0.1} 
+              delay={index * 0.1}
             />
           ))}
         </div>
