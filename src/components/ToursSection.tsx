@@ -1,12 +1,13 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
-import { Clock, Users, Sparkles, UtensilsCrossed } from "lucide-react";
+import { Clock, Users, Sparkles, UtensilsCrossed, ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { tours } from "@/lib/tours-data";
 
 interface TourCardProps {
   id: string;
-  image: string;
+  images: string[];
   category: string;
   title: string;
   description: string;
@@ -17,7 +18,19 @@ interface TourCardProps {
   delay?: number;
 }
 
-function TourCard({ id, image, category, title, description, duration, includes, price, isCustom, delay = 0 }: TourCardProps) {
+function TourCard({ id, images, category, title, description, duration, includes, price, isCustom, delay = 0 }: TourCardProps) {
+  const [currentImage, setCurrentImage] = useState(0);
+
+  const nextImage = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setCurrentImage((prev) => (prev + 1) % images.length);
+  };
+
+  const prevImage = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setCurrentImage((prev) => (prev - 1 + images.length) % images.length);
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -28,10 +41,46 @@ function TourCard({ id, image, category, title, description, duration, includes,
     >
       <div className="relative overflow-hidden">
         <img
-          src={image}
+          src={images[currentImage]}
           alt={title}
           className="w-full h-56 object-cover transition-transform duration-700 group-hover:scale-110"
         />
+        
+        {/* Navigation arrows */}
+        <button
+          onClick={prevImage}
+          className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+          aria-label="Previous image"
+        >
+          <ChevronLeft className="h-4 w-4" />
+        </button>
+        <button
+          onClick={nextImage}
+          className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+          aria-label="Next image"
+        >
+          <ChevronRight className="h-4 w-4" />
+        </button>
+
+        {/* Dot indicators */}
+        <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5">
+          {images.map((_, index) => (
+            <button
+              key={index}
+              onClick={(e) => {
+                e.stopPropagation();
+                setCurrentImage(index);
+              }}
+              className={`w-2 h-2 rounded-full transition-all ${
+                index === currentImage 
+                  ? "bg-white w-4" 
+                  : "bg-white/50 hover:bg-white/75"
+              }`}
+              aria-label={`Go to image ${index + 1}`}
+            />
+          ))}
+        </div>
+
         {isCustom && (
           <div className="absolute top-4 left-4 bg-primary text-primary-foreground px-3 py-1.5 rounded-full text-sm font-medium flex items-center gap-1.5">
             <Sparkles className="h-4 w-4" />
@@ -94,7 +143,7 @@ export function ToursSection() {
             <TourCard 
               key={tour.id} 
               id={tour.id}
-              image={tour.image}
+              images={tour.images}
               category={tour.category}
               title={tour.title}
               description={tour.description}

@@ -6,6 +6,7 @@ import customTour from "@/assets/tour-custom.jpg";
 export interface Tour {
   id: string;
   image: string;
+  images: string[];
   category: string;
   title: string;
   description: string;
@@ -25,6 +26,7 @@ export const tours: Tour[] = [
   {
     id: "elephant-atv-rafting",
     image: elephantTour,
+    images: [elephantTour, atvTour, raftingTour],
     category: "Adventure Tour",
     title: "Elephants, ATV & White Water Rafting",
     description: "The ultimate adventure day: feed elephants at an ethical sanctuary, ride ATVs through the jungle, and conquer exciting rapids.",
@@ -64,6 +66,7 @@ export const tours: Tour[] = [
   {
     id: "elephant-sticky-waterfall",
     image: raftingTour,
+    images: [raftingTour, elephantTour, customTour],
     category: "Nature Tour",
     title: "Elephants & Sticky Waterfall",
     description: "Meet rescued elephants in the morning, then climb the magical Sticky Waterfall where you can walk straight up the rocks.",
@@ -101,6 +104,7 @@ export const tours: Tour[] = [
   {
     id: "elephant-temples-cafe",
     image: atvTour,
+    images: [atvTour, elephantTour, customTour],
     category: "Cultural Tour",
     title: "Elephants, Temples & Ancient Cafe",
     description: "A perfect blend of wildlife, spirituality, and culture. Meet elephants, explore sacred temples, and relax at a hidden vintage cafe.",
@@ -138,6 +142,7 @@ export const tours: Tour[] = [
   {
     id: "custom-tour",
     image: customTour,
+    images: [customTour, elephantTour, atvTour],
     category: "Custom Tour",
     title: "Build Your Perfect Chiang Mai Day",
     description: "Tell us what you like and we design your route. Food, temples, coffee farms, hot springs — you choose.",
